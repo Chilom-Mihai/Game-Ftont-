@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+:root{
+    --color:rgb(0, 217, 255);
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.left img{
+    max-width: 1000%;
+    height: auto;
+    vertical-align: middle;
+}
+.right body{
+    margin-bottom: 1.1rem;
+    color: rgb(253, 253, 253);
+
+}
+.right h4{
+    font-weight: 500;
+    background: var(--color);
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+}
+
+.right h1{
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}
+.right p{
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    color: orange;
+    margin-right: 30px;
+}
+.btn::after{
+    content: "";
+    background: var(--color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index:-1;
+    transition: width .5s ease;
+}
+.btn:hover::after{
+    width: 100%;
+}
+/*ca sa miscam de marginea ecranului de la exterior spre interior*/
+@media(max-width:768px){ 
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.right {
+    font-family:"Poppins", sans-serif;
+}
+
+.right a{
+    padding: 11.8px;
+    cursor: pointer;
+    
+}
+.right:not(:last-child){
+    margin-bottom: 50px;
+}

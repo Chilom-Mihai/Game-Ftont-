@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kiwi Maru', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+
+input{
+    outline: none;
+    border: none;
+}
+
+.logo img{
+    margin-left: -520px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(rgb(121, 0, 0), rgb(0, 180, 204), rgb(2, 2, 75), alpha);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+}
+
+nav ul{
+    display: flex;
+    margin-right: -280px;
+}
+
+nav ul li a{
+    height: 50px;
+    line-height: 2;
+    margin: 3px;
+    padding: 0px 17px;
+    display: flex;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: orange;
+    letter-spacing: 2px;
+    transition: 0.6s ease-in-out;
+    
+}
+
+nav ul li a:hover{
+    border-left: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+    box-shadow: 5px 10px 30px rgba(red, green, blue, alpha);
+}
+
+.homeactiv{
+    border-left: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+    box-shadow: 5px 10px 30px rgba(red, green, blue, alpha);
+}
+
+#header{
+    width: 100%;
+    height: 950px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("bg1.jpg");
+    position:relative;
+}
+
+
+.header-h{
+    width: 500px;
+    position:absolute;
+    left: 15%;
+    top: 79%;
+    transform: translate(-13%,64%);
+}
+
+.btn{
+    width: 130px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    box-shadow: 5px 10px 30px rgba(rgb(66, 228, 115), green, rgb(241, 47, 199), alpha);
+    border-radius: 10px;
+    color:white;
+    margin-top: 25px;
+    font-weight: 500;
+    transition: 0.6s ease-out;
+    font-size: 22px;
+}
+
+.btn:hover{
+    background-color: transparent;
+}
+
+
+
